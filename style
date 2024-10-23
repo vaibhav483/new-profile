@@ -1,0 +1,186 @@
+body {
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: rgba(233, 238, 240, 0.874);
+    padding: 10px 20px;
+
+  }
+#header{
+    width: 95%;
+    height: 100vh;
+    background-image: url(image6.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+.container{
+    padding: 10px 10%;
+}
+div h1 span{
+    color: red;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: Absolute; top: 20px; right:10%;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: ' ';
+    width:0;
+    height: 3px;
+    background: purple;
+    position: absolute;
+    left:0 ;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 13%;
+    padding: 10px 5%;
+}
+.header-text h1 span{
+    color: red;
+    
+}
+
+#about{
+    padding: 80px 0;
+    margin-top: -10%;
+}
+
+body div p1{
+    color: white;
+    position: absolute;
+    top: 8px;
+    padding: 60px ;
+}
+body div span{
+    color: red;
+}
+
+#about{
+    padding: 100px 0;
+    color: #ababab;
+}
+
+row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 13%;
+}
+p{
+    color: white;
+    padding: 1% 10% ;
+    
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 30%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.contact-right {
+    float: right;
+    width: 30%; 
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60px;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i {
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 25px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+
+}
